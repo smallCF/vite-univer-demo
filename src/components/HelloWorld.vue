@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { ref,toRaw,onMounted } from 'vue'
+import '@univerjs/sheets-data-validation-ui/lib/index.css';
+
 import { Univer, UniverInstanceType, Workbook, LocaleType,FUniver,Range,SheetTypes } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverUIPlugin } from "@univerjs/ui";
@@ -9,6 +11,7 @@ import { UniverSheetsPlugin } from "@univerjs/sheets";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverSheetsFilterPlugin } from '@univerjs/sheets-filter';
 import { UniverSheetsFilterUIPlugin } from '@univerjs/sheets-filter-ui';
+import { UniverDataValidationPlugin } from '@univerjs/data-validation';
 import { UniverSheetsDataValidationPlugin } from '@univerjs/sheets-data-validation';
 import { UniverSheetsDataValidationUIPlugin } from '@univerjs/sheets-data-validation-ui';
 
@@ -54,6 +57,7 @@ function init(){
   univer.registerPlugin(UniverSheetsUIPlugin);
   univer.registerPlugin(UniverSheetsFilterPlugin);
   univer.registerPlugin(UniverSheetsFilterUIPlugin);
+  univer.registerPlugin(UniverDataValidationPlugin);
   univer.registerPlugin(UniverSheetsDataValidationPlugin);
   univer.registerPlugin(UniverSheetsDataValidationUIPlugin, {
     // 是否在下拉菜单中显示编辑按钮
