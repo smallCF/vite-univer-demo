@@ -1,0 +1,32 @@
+{
+  "name": "vite-univer-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@univerjs/core": "^0.5.1",
+    "@univerjs/design": "^0.5.1",
+    "@univerjs/docs": "^0.5.1",
+    "@univerjs/docs-ui": "^0.5.1",
+    "@univerjs/sheets": "^0.5.1",
+    "@univerjs/sheets-data-validation": "^0.5.1",
+    "@univerjs/sheets-data-validation-ui": "^0.5.1",
+    "@univerjs/sheets-filter": "^0.5.1",
+    "@univerjs/sheets-filter-ui": "^0.5.1",
+    "@univerjs/sheets-ui": "^0.5.1",
+    "@univerjs/ui": "^0.5.1",
+    "@univerjs/vite-plugin": "^0.5.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1",
+    "vue-tsc": "^2.1.10"
+  }
+}
